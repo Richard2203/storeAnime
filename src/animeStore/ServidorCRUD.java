@@ -6,7 +6,7 @@ package animeStore;
 import java.io.*;
 import java.net.*;
 import java.sql.*;
- 
+
 public class ServidorCRUD {
     private static final int PUERTO = 12345;
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/storeanime";
@@ -15,6 +15,8 @@ public class ServidorCRUD {
  
     public static void main(String[] args) {
         try {
+            //Class.forName("org.postgresql.Driver");
+
             ServerSocket servidorSocket = new ServerSocket(PUERTO);
             System.out.println("Servidor esperando conexiones...");
  
